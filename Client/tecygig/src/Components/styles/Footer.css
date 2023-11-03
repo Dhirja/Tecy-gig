@@ -1,0 +1,81 @@
+
+.footer-container-main{
+    background-color: rgb(17, 17, 77);
+
+}
+.footer-container{
+  width: 90%;
+  margin: auto;
+    margin-top: 20px;
+    background-color: rgb(17, 17, 77);
+    display: grid;
+    margin-top: 50px;
+    /* align-items: stretch; */
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 19px;
+}
+.footer-container>div{
+  
+    text-align: left;
+   margin: 10px;
+   padding: 10px;
+    /* height: 450px; */
+    line-height: 28px;
+    font-size: 17px;
+    color: rgb(211, 203, 203);
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    /* background-color: white; */
+}
+.buttn-icon{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(25, 25, 112);;
+    border: none;
+    background-color: none;
+}
+.no-bullet {
+    list-style-type: none; /* Remove bullet points */
+}
+.last-footer-div{
+    background-color: rgb(16, 16, 61);
+    text-align: center;
+    color: green;
+    height: 80px;
+    padding: 25px;
+    border-top: 1px solid rgb(109, 106, 106);
+}
+
+/* ****************************midia quary css *************************************** */
+@media screen and (max-width: 768px) {
+
+    .footer-container{
+        width: 90%;
+        margin: auto;
+          margin-top: 20px;
+          background-color: rgb(17, 17, 77);
+          display: grid;
+          margin-top: 30px;
+          /* align-items: stretch; */
+          grid-template-columns: repeat(1, minmax(250px, 1fr));
+          grid-column-gap: 10px;
+          grid-row-gap: 10px;
+      }
+      .footer-container>div{
+        
+          text-align: left;
+         margin: 10px;
+         padding: 10px;
+          /* height: 450px; */
+          line-height: 28px;
+          font-size: 17px;
+          color: white;
+          border-radius: 10px;
+          /* border: 1px solid red; */
+          /* background-color: white; */
+      }
+
+
+}
