@@ -17,7 +17,7 @@ export default class NavbarComp extends Component {
                     <Navbar bg="dark" variant={"dark"} expand="lg">
                         <div className='d-flex justify-content-around border container-fluid'>
 
-                            <Navbar.Brand href="#">
+                            <Navbar.Brand href="/">
                                 <img height={70} src='https://www.tecygig.com/img/tecygiglogo.png' />
                             </Navbar.Brand>
                             <div>
@@ -51,7 +51,7 @@ export default class NavbarComp extends Component {
                         <Route path="/contact">
                             <Contact />
                         </Route>
-                        <Route path="/">
+                        <Route exact path="/">
                             <Home />
                         </Route>
                         <Route path="/career">

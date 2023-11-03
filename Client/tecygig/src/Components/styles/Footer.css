@@ -23,7 +23,7 @@
     /* height: 450px; */
     line-height: 28px;
     font-size: 17px;
-    color: rgb(211, 203, 203);
+    color: rgb(173, 168, 168);
     border-radius: 10px;
     /* border: 1px solid red; */
     /* background-color: white; */
@@ -47,6 +47,7 @@
     padding: 25px;
     border-top: 1px solid rgb(109, 106, 106);
 }
+
 
 /* ****************************midia quary css *************************************** */
 @media screen and (max-width: 768px) {

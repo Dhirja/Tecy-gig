@@ -2,6 +2,10 @@
 import React from 'react'
 import './styles/Footer.css'
 import { Button, ListGroup } from 'react-bootstrap';
+import { FcCallback,FaEnvelope,FcRefresh } from "react-icons/fc";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { BsFillBriefcaseFill } from "react-icons/bs";
 
 export const Footer = () => {
     return (
@@ -52,11 +56,11 @@ export const Footer = () => {
                     <h3>Contact</h3>
                     <hr />
                     <p>Let's go! Please fill out your details below and we will get back to you within 24 hours.</p>
-                    <ul className='no-bullet'>
-                        <li>Phone: +(91) 973-067-6430</li>
-                        <li>tecygig@gmail.com</li>
-                        <li>info@tecygig.com</li>
-                        <li>5 ,3A-Bwing Shradda</li>
+                    <ul className='no-bullet' style={{fontSize:"18px",marginLeft:"-15px"}}>
+                        <li><FcCallback /> : +(91) 973-067-6430</li>
+                        <li> <BsFillBriefcaseFill/> tecygig@gmail.com</li>
+                        <li><BsFillBriefcaseFill/>  info@tecygig.com</li>
+                        <li><FcRefresh/> 5 ,3A-Bwing Shradda</li>
 
                     </ul>
                     <p>Darshan Yeshwant Nagar Opp Shiv Sena Office Vakola Santacruz East 400055 Mumbai</p>
