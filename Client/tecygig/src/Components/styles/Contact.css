@@ -1,0 +1,29 @@
+.Contact-main-container{
+    margin-top: 120px;
+    /* text-align: center; */
+
+    font-size: 19px;
+}
+.form-cont{
+   
+    margin-left: 160px;
+}
+.fresher-container-address{
+    border-radius: 10px ;
+    height: 350px;
+    padding: 10px;
+}
+
+/* ****************************midia quary css *************************************** */
+@media screen and (max-width: 768px) {
+    .form-cont{
+        display: flex;
+       margin-left: 0px;
+    }
+    .fresher-container-address{
+        border-radius: 10px ;
+        height: 450px;
+        padding: 10px;
+        width: auto;
+    }
+}
