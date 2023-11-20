@@ -46,6 +46,12 @@ const steps = [
   {
     id: "5",
     message: "Please wait for some time our team will contact you soon",
+    trigger: 6,
+  },
+  {
+    id: "6",
+    message:
+      "you can also call on this 8108727255 we are available 24*7 for support",
     end: true,
   },
 ];
@@ -76,7 +82,7 @@ function ChatApp() {
         <ChatBot
           // This appears as the header
           // text for the chat bot
-          style={{ height: "80%" }}
+          style={{ height: "80%", overflowY: "scroll" }}
           headerTitle="TecyGig Support"
           steps={steps}
           {...config}
