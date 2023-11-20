@@ -69,8 +69,8 @@ const AdmnSignLogin = () => {
           console.log("Data sent to the server:", data);
           if (data.message == "Email already registered") {
             alert("user already exist please go to the log In");
-          } else if (data.message == "Admin role is already exist") {
-            alert("Admin role is already exist");
+          } else if (data.message == "Admin and Hr role is already exist") {
+            alert(data.message);
           } else {
             alert(`you are successfully Signed In as ${data.user.role}`);
             history.push("/login");
