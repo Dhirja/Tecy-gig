@@ -8,12 +8,17 @@ const signupController = async (req, res) => {
 
     // Check if the email is already registered
     const existingUser = await authModel.findOne({ email });
-    // const adminRolecount = await authModel.findOne({ role });
+    const count = await authModel.countDocuments();
 
     if (existingUser) {
       return res
         .status(400)
         .json({ success: false, message: "Email already registered" });
+    } else if (count > 1) {
+      return res.status(400).json({
+        success: false,
+        message: "Admin and Hr role is already exist",
+      });
     }
     //  else if (adminRolecount.role != "admin") {
     //   return res
