@@ -1,11 +1,8 @@
 import React from "react";
 import "./styles/Footer.css";
-import { Button, ListGroup } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
 import { AiOutlineMail } from "react-icons/ai";
-import { FcCallback, FaEnvelope, FcRefresh } from "react-icons/fc";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { BsFillBriefcaseFill } from "react-icons/bs";
+import { FcCallback, FcRefresh } from "react-icons/fc";
 import { Link, useHistory } from "react-router-dom";
 
 export const Footer = () => {
@@ -84,12 +81,52 @@ export const Footer = () => {
         <div>
           <h3 style={{ marginLeft: "30px" }}>Company</h3>
           <hr />
-          <ul style={{ marginLeft: "30px" }}>
-            <li>about Us</li>
-            <li>Our services</li>
-            <li>Portfolio</li>
-            <li>Pricing Plan</li>
-            <li>Contact us</li>
+          <ul style={{ marginLeft: "30px", lineHeight: "15px" }}>
+            <li>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                style={{ color: "rgb(173, 168, 168)" }}
+              >
+                About
+              </Nav.Link>
+            </li>
+            <li>
+              <Nav.Link
+                as={Link}
+                to="/services"
+                style={{ color: "rgb(173, 168, 168)" }}
+              >
+                Services
+              </Nav.Link>
+            </li>
+            <li>
+              <Nav.Link
+                as={Link}
+                to="/services"
+                style={{ color: "rgb(173, 168, 168)" }}
+              >
+                Services
+              </Nav.Link>
+            </li>
+            <li>
+              <Nav.Link
+                as={Link}
+                to="/services"
+                style={{ color: "rgb(173, 168, 168)" }}
+              >
+                Services
+              </Nav.Link>
+            </li>
+            <li>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                style={{ color: "rgb(173, 168, 168)" }}
+              >
+                Contact
+              </Nav.Link>
+            </li>
           </ul>
         </div>
         <div>
